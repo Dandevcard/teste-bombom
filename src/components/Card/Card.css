@@ -1,0 +1,141 @@
+.card>img {
+  width: 120px;
+  margin: 0 auto;
+}
+
+.cards {
+  margin-top: 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+}
+
+.card {
+  width: 250px;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  border: 1px solid rgba(100, 100, 100, 0.3);
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+
+.card-item>h1 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.card-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.precos {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.preco-false {
+  text-decoration: line-through;
+  color: rgba(100, 100, 100, 0.5);
+  font-size: 16px;
+}
+
+button {
+  background: #065eb2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 250px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.card button {
+  width: 150px;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 88%
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 85%;
+  }
+}
+
+@media (max-width: 320px) {
+  .card {
+    width: 80%;
+  }
+}
+
+/* .cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+
+@media (max-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr;
+    background: blue;
+  }
+}
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .card {
+    width: 300px;
+    max-width: 350px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .card > img {
+    margin-top: -20px;
+    width: 100px;
+    height: auto;
+  }
+}
+@media (max-width: 620px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+ */
